@@ -33,7 +33,7 @@ const Cards = ({ img }: { img: string }) => {
         <Link to={"/"} className="text-secondary">
           Apache
         </Link>
-        /<Link to={"/"}>/Pekko</Link>
+        /<Link to={"/"}>Pekko</Link>
       </h4>
       <p className="text-lg max-[540px]:text-base px-4 font-mont my-2 opacity-85 font-normal text-white">
         Build highly concurrent, distributed, and resilient message-driven applications using Java/Scala
