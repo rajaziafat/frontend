@@ -46,7 +46,7 @@ const FeaturesSection = () => {
               Forget the far west! Secure your <br /> platform, secure your business.
             </h2>
             <div className="mt-[42px]">
-              <UserButton title="OPEN SOURCE USERS" className="px-4" path="/user" />
+              <UserButton title="OPEN SOURCE USERS" className="" path="/user" />
             </div>
           </div>
           <div className="relative ">

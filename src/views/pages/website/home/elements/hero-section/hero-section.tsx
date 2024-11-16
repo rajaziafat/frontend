@@ -14,6 +14,7 @@ const HeroSection = () => {
         <h1 className="mb-[20px] font-mich max-[700px]:!mt-10 !text-center text-[30px] font-[400] text-[#FFFFFF] md:mb-[40px] md:text-[42px] lg:!text-start xl:text-[50px] 1600:mb-[70px] 1600:text-[62px]">
           Building the foundation of open source 3.0
         </h1>
+
         <PrimaryButton title="FIND OUT MORE" className="" path="/developer" />
       </div>
       {/* Right  */}

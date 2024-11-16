@@ -105,7 +105,7 @@ export function Header({}: HeaderProps) {
                         </ul>
                       ) : (
                         <>
-                          <a href="https://blog.open-source-economy.com/" className="gradient-text" target="_blank" rel="noopener noreferrer">
+                          <a href="https://blog.open-source-economy.com/" className="gradient-text mr-8" target="_blank" rel="noopener noreferrer">
                             Blog
                           </a>
                           <SecondaryButton title="WHITE PAPER" className="text-white" path="/white-paper" />

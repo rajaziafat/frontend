@@ -3,6 +3,7 @@ import fundbgimg from "../../../../assets/fund.png";
 import fund1 from "../../../../assets/fund1.png";
 import fund2 from "../../../../assets/fund2.png";
 import fund3 from "../../../../assets/fund3.png";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="min-h-screen  py-10 relative ">
@@ -29,8 +30,10 @@ const Cards = ({ img }: { img: string }) => {
         <img src={img} className="size-[55px] object-contain " alt="" />
       </div>
       <h4 className="text-3xl max-[540px]:!text-2xl font-mich mt-3 ">
-        <span className="text-secondary">Apache</span>
-        /Pekko
+        <Link to={"/"} className="text-secondary">
+          Apache
+        </Link>
+        /<Link to={"/"}>/Pekko</Link>
       </h4>
       <p className="text-lg max-[540px]:text-base px-4 font-mont my-2 opacity-85 font-normal text-white">
         Build highly concurrent, distributed, and resilient message-driven applications using Java/Scala
