@@ -23,7 +23,7 @@ const FeaturesSection = () => {
               Stop begging for donations! <br /> Fund your future. Have a Say
             </h2>
             <div className="mt-[42px]">
-              <DeveloperButton title="DEVELOPERS" path="/developer" />
+              <DeveloperButton title="DEVELOPERS" path="/developer" className="" />
             </div>
           </div>
           <div className="relative">
