@@ -12,9 +12,9 @@ const Hero = () => {
           <span className="text-primary-developer ml-3">Issue</span>
         </h1>
         <div className="max-w-[1300px] flex gap-12 max-[1024px]:!px-5 px-3 flex-wrap justify-center  mx-auto mt-40 pb-20">
-          <Cards img={fund1} />
-          <Cards img={fund2} />
-          <Cards img={fund3} />
+          <Cards img={"https://avatars.githubusercontent.com/u/141809657?v=4"} />
+          <Cards img={"https://avatars.githubusercontent.com/u/47359"} />
+          <Cards img={"https://avatars.githubusercontent.com/u/17545605?v=4"} />
         </div>
       </div>
       {/* <img src={fundbgimg} className="absolute -top-[800px] object-contain  1500:top-0 left-0 w-full h-full" alt="" /> */}
@@ -26,7 +26,7 @@ const Cards = ({ img }: { img: string }) => {
   return (
     <div className="bg-[#14233A] w-[386px] max-[540px]:w-full min-h-[399px] max-[490px]:pb-10 rounded-[40px] flex flex-col items-center gap-y-3 pt-4">
       <div className=" bg-[url('/src/assets/glass.svg')] size-[85px] bg-[length:100%_100%] grid place-items-center">
-        <img src={img} className="size-[55px] object-contain" alt="" />
+        <img src={img} className="size-[55px] object-contain " alt="" />
       </div>
       <h4 className="text-3xl max-[540px]:!text-2xl font-mich mt-3 ">
         <span className="text-secondary">Apache</span>
