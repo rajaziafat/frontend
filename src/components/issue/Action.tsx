@@ -26,13 +26,13 @@ export function Action(props: ActionProps) {
     <>
       {props.successfullyFunded ? (
         <DeveloperButton
-          className=""
+          className="w-52"
           path={fundIssuePath(props.issue.id.repositoryId.ownerId.login, props.issue.id.repositoryId.name, props.issue.id.number)}
           title="ACT ON ISSUE"
         />
       ) : (
         <SecondaryDeveloperButton
-          className=""
+          className="w-52"
           path={fundIssuePath(props.issue.id.repositoryId.ownerId.login, props.issue.id.repositoryId.name, props.issue.id.number)}
           title="ACT ON ISSUE"
         />
@@ -62,9 +62,9 @@ export function Action(props: ActionProps) {
         )} */}
 
         {props.successfullyFunded ? (
-          <SecondaryDeveloperButton className="" path={props.issue.htmlUrl} title="ACT ON GITHUB" />
+          <SecondaryDeveloperButton className="w-52" path={props.issue.htmlUrl} title="ACT ON GITHUB" />
         ) : (
-          <DeveloperButton className="" path={props.issue.htmlUrl} title="ACT ON GITHUB" />
+          <DeveloperButton className="w-52" path={props.issue.htmlUrl} title="ACT ON GITHUB" />
         )}
       </>
     );
