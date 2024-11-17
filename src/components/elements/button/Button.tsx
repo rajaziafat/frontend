@@ -18,9 +18,11 @@ export enum ButtonSize {
 
 interface ButtonProps {
   htmlButtonProps: React.ButtonHTMLAttributes<HTMLButtonElement>;
-  type: ButtonType;
+  type?: ButtonType;
   size?: ButtonSize;
-  audience: Audience;
+  audience?: Audience;
+  holder?: string;
+  className?: string;
 }
 
 export function Button(props: ButtonProps) {

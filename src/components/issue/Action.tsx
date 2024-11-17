@@ -14,30 +14,30 @@ interface ActionProps {
 export function Action(props: ActionProps) {
   console.log(props.successfullyFunded);
   const actOnIssueButton = (
-    // <LinkButton
-    //   linkProps={{ to: fundIssuePath(props.issue.id.repositoryId.ownerId.login, props.issue.id.repositoryId.name, props.issue.id.number) }}
-    //   buttonProps={{
-    //     htmlButtonProps: { children: "ACT ON ISSUE" },
-    //     type: props.successfullyFunded ? ButtonType.SECONDARY : ButtonType.PRIMARY,
-    //     audience: Audience.DEVELOPER,
-    //     size: ButtonSize.MEDIUM,
-    //   }}
-    // />
-    <>
-      {props.successfullyFunded ? (
-        <DeveloperButton
-          className="w-52"
-          path={fundIssuePath(props.issue.id.repositoryId.ownerId.login, props.issue.id.repositoryId.name, props.issue.id.number)}
-          title="ACT ON ISSUE"
-        />
-      ) : (
-        <SecondaryDeveloperButton
-          className="w-52"
-          path={fundIssuePath(props.issue.id.repositoryId.ownerId.login, props.issue.id.repositoryId.name, props.issue.id.number)}
-          title="ACT ON ISSUE"
-        />
-      )}
-    </>
+    <LinkButton
+      linkProps={{ to: fundIssuePath(props.issue.id.repositoryId.ownerId.login, props.issue.id.repositoryId.name, props.issue.id.number) }}
+      buttonProps={{
+        htmlButtonProps: { children: "ACT ON ISSUE" },
+        type: props.successfullyFunded ? ButtonType.SECONDARY : ButtonType.PRIMARY,
+        audience: Audience.DEVELOPER,
+        size: ButtonSize.MEDIUM,
+      }}
+    />
+    // <>
+    //   {props.successfullyFunded ? (
+    //     <DeveloperButton
+    //       className="w-52"
+    //       path={fundIssuePath(props.issue.id.repositoryId.ownerId.login, props.issue.id.repositoryId.name, props.issue.id.number)}
+    //       title="ACT ON ISSUE"
+    //     />
+    //   ) : (
+    //     <SecondaryDeveloperButton
+    //       className="w-52"
+    //       path={fundIssuePath(props.issue.id.repositoryId.ownerId.login, props.issue.id.repositoryId.name, props.issue.id.number)}
+    //       title="ACT ON ISSUE"
+    //     />
+    //   )}
+    // </>
 
     // <DeveloperButton className="" path="" title="ACT ON ISSUE" />
   );
@@ -49,7 +49,7 @@ export function Action(props: ActionProps) {
       <>
         {actOnIssueButton}
 
-        {/* {props.successfullyFunded && (
+        {props.successfullyFunded && (
           <ExternalLinkButton
             href={props.issue.htmlUrl}
             buttonProps={{
@@ -59,13 +59,13 @@ export function Action(props: ActionProps) {
               audience: Audience.DEVELOPER,
             }}
           />
-        )} */}
+        )}
 
-        {props.successfullyFunded ? (
+        {/* {props.successfullyFunded ? (
           <SecondaryDeveloperButton className="w-52" path={props.issue.htmlUrl} title="ACT ON GITHUB" />
         ) : (
           <DeveloperButton className="w-52" path={props.issue.htmlUrl} title="ACT ON GITHUB" />
-        )}
+        )} */}
       </>
     );
   } else if (props.state === ManagedIssueState.REJECTED || props.state === ManagedIssueState.SOLVED) {

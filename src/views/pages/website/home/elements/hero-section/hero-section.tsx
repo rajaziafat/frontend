@@ -1,7 +1,7 @@
 import React from "react";
 import img from "src/assets/Frame.svg";
 import GridLayerimg from "src/assets/grid-layer.png";
-import { ButtonSize, ButtonType, LinkButton } from "src/components";
+import { ButtonSize, ButtonType, ExternalLinkButton, LinkButton } from "src/components";
 import { PrimaryButton, SecondaryButton } from "src/components/Buttons/Buttons";
 import { Audience } from "src/views";
 
@@ -15,7 +15,28 @@ const HeroSection = () => {
           Building the foundation of open source 3.0
         </h1>
 
+        {/* <LinkButton
+          // to="/developer"
+          htmlbuttonProps={{
+            type: ButtonType.PRIMARY,
+            audience: Audience.ALL,
+            holder: "FIND OUT MORE",
+            className: " xl:!h-[61px] duration-[300]",
+          }}
+        /> */}
+
+        {/* <ExternalLinkButton
+          href={"/as"}
+          buttonProps={{
+            htmlButtonProps: { children: "FIND OUT MORE" },
+            type: ButtonType.PRIMARY,
+            audience: Audience.ALL,
+          }}
+        /> */}
+
         <PrimaryButton title="FIND OUT MORE" className="" path="/developer" />
+
+        {/* <LinkButton title="Click Me" path="/home" buttonProps={{ type: ButtonType.PRIMARY, size: ButtonSize.LARGE }} /> */}
       </div>
       {/* Right  */}
       <div className="w-full max-w-[700px] lg:max-w-none">
