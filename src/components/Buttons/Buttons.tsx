@@ -33,6 +33,17 @@ export const DeveloperButton = ({ title, className, path }: { title: string; cla
     </button>
   );
 };
+export const SecondaryDeveloperButton = ({ title, className, path }: { title: string; className: string; path: string }) => {
+  return (
+    <button
+      className={`!bg-primary-developer text-[13px]   flex justify-center items-center  font-mich h-[55px] rounded-md px-3 duration-300 border-[2px] !border-primary-developer hover:!bg-transparent   ${className}`}
+    >
+      <Link to={path}>
+        <span className="relative z-20">{title}</span>
+      </Link>
+    </button>
+  );
+};
 export const UserButton = ({ title, className, path }: { title: string; className: string; path: string }) => {
   return (
     <button
