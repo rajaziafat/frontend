@@ -33,8 +33,8 @@ const Cards = ({ img, description }: { img: string; description: string }) => {
   return (
     <div className="bg-[#14233A] w-[386px] max-[540px]:w-full py-8 max-[490px]:pb-10 rounded-[40px] flex flex-col items-center justify-between gap-y-3 pt-4 pb-4">
       <div className="flex flex-col items-center justify-between ">
-        <div className=" bg-[url('/src/assets/glass.svg')] pt-1 size-[85px] bg-[length:100%_100%] grid place-items-center">
-          <img src={img} className="size-[50px] rounded-md object-contain " alt="" />
+        <div className=" bg-[url('/src/assets/glass.svg')] pt-2 size-[85px] bg-[length:100%_100%] grid place-items-center">
+          <img src={img} className="size-[60px] rounded-full object-contain " alt="" />
         </div>
         {/* <div className=""> */}
         <div className="max-[860px]:min-h-[150px]">
