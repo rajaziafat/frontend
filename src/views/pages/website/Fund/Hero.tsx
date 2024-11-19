@@ -37,16 +37,19 @@ const Cards = ({ img, description }: { img: string; description: string }) => {
         {/* <div className=" bg-[url('/src/assets/glass.svg')] pt-2 size-[85px] bg-[length:100%_100%] grid place-items-center">
           <img src={img} className="size-[60px] rounded-full object-contain " alt="" />
         </div> */}
-        <div className=" border rounded-full border-gray-300 p-0 size-[85px] bg-[length:100%_100%] grid place-items-center">
-          <img src={img} className="w-full rounded-full object-contain " alt="" />
+        <div className=" border-2 rounded-full border-gray-300 overflow-hidden p-0 size-[85px] bg-[length:100%_100%] grid place-items-center">
+          <img src={img} className="size-full object-center  object-cover " alt="" />
         </div>
         {/* <div className=""> */}
         <div className="max-[860px]:min-h-[150px]">
           <h4 className="text-3xl max-[540px]:!text-2xl font-mich mt-3 ">
-            <Link to={"/"} className="text-secondary">
+            <Link to={"/"} className="text-secondary hover:underline duration-300">
               Apache
             </Link>
-            /<Link to={"/"}>Pekko</Link>
+            /
+            <Link to={"/"} className="hover:underline duration-300">
+              Pekko
+            </Link>
           </h4>
           <p className="text-lg mt-3 max-[540px]:text-base px-4 font-mont my-2 opacity-85 font-normal text-white">{description}</p>
         </div>
