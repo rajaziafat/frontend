@@ -14,6 +14,7 @@ import { Audience } from "../Audience";
 import { SecondaryButton } from "src/components/Buttons/Buttons";
 import { DowIcon } from "src/Utils/Icons";
 import UserImg from "../../assets/User.svg";
+import { Button } from "src/components/Button";
 interface HeaderProps {}
 
 export function Header({}: HeaderProps) {
@@ -32,7 +33,7 @@ export function Header({}: HeaderProps) {
     <div data-aos="fade-down">
       {" "}
       {/* Applying AOS fade-down animation to the entire div */}
-      <div className="icons_section d-flex align-items-end justify-content-end pt-4 pb-3 container-fluid gap-3 iconnav">
+      <div className="icons_section d-flex align-items-end justify-content-end container-fluid iconnav gap-3 pb-3 pt-4">
         <SocialMedia />
       </div>
       <div className="">
@@ -75,7 +76,7 @@ export function Header({}: HeaderProps) {
 
                   <Offcanvas.Body>
                     {" "}
-                    <Nav className="justify-content-end align-items-lg-center font-mich   gap-3 flex-grow-1">
+                    <Nav className="justify-content-end align-items-lg-center font-mich flex-grow-1 gap-3">
                       {path?.pathname === "/fund" ? (
                         <ul className="flex items-center gap-4">
                           <li>
@@ -108,7 +109,12 @@ export function Header({}: HeaderProps) {
                           <a href="https://blog.open-source-economy.com/" className="gradient-text mr-8" target="_blank" rel="noopener noreferrer">
                             Blog
                           </a>
-                          <SecondaryButton title="WHITE PAPER" className="text-white" path="/white-paper" />
+                          {/* <SecondaryButton title="WHITE PAPER" className="text-white" path="/white-paper" /> */}
+                          <Button variant="SECONDARY" size="LARGE" asChild>
+                            <Link to="/white-paper">
+                              <span className="relative z-20">WHITE PAPE</span>
+                            </Link>
+                          </Button>
                         </>
                       )}
                     </Nav>

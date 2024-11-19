@@ -11,6 +11,7 @@ export const PrimaryButton = ({ title, className, path }: { title: string; class
     </button>
   );
 };
+
 export const SecondaryButton = ({ title, className, path }: { title: string; className: string; path: string }) => {
   return (
     <button

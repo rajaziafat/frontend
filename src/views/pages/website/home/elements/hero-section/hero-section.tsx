@@ -1,17 +1,15 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import img from "src/assets/Frame.svg";
 import GridLayerimg from "src/assets/grid-layer.png";
-import { ButtonSize, ButtonType, ExternalLinkButton, LinkButton } from "src/components";
-import { PrimaryButton, SecondaryButton } from "src/components/Buttons/Buttons";
-import { Audience } from "src/views";
+import { Button } from "src/components/Button";
 
 const HeroSection = () => {
   return (
     <div className="relative mx-auto mt-[30px] flex w-full max-w-[1920px] flex-col-reverse items-center justify-center gap-[0px] px-[20px] py-[40px] sm:gap-0 lg:flex-row lg:justify-start lg:px-[7%] lg:py-[40px] xl:py-0 xl:pl-[8%] 2xl:pl-[142px]">
       <img src={GridLayerimg} className="grid-layer-img pointer-events-none absolute right-0 top-0 !z-[0]" alt="" />
       {/* left  */}
-      <div className="flex  w-full max-[768px]:-translate-y-11 flex-col items-center justify-center lg:max-w-[550px] lg:items-start 1600:max-w-[650px]">
-        <h1 className="mb-[20px] font-mich max-[700px]:!mt-10 !text-center text-[30px] font-[400] text-[#FFFFFF] md:mb-[40px] md:text-[42px] lg:!text-start xl:text-[50px] 1600:mb-[70px] 1600:text-[62px]">
+      <div className="flex w-full flex-col items-center justify-center max-[768px]:-translate-y-11 lg:max-w-[550px] lg:items-start 1600:max-w-[650px]">
+        <h1 className="font-mich mb-[20px] !text-center text-[30px] font-[400] text-[#FFFFFF] max-[700px]:!mt-10 md:mb-[40px] md:text-[42px] lg:!text-start xl:text-[50px] 1600:mb-[70px] 1600:text-[62px]">
           Building the foundation of open source 3.0
         </h1>
 
@@ -34,7 +32,13 @@ const HeroSection = () => {
           }}
         /> */}
 
-        <PrimaryButton title="FIND OUT MORE" className="" path="/developer" />
+        {/* <PrimaryButton title="FIND OUT MORE" className="" path="/developer" /> */}
+
+        <Button variant="PRIMARY" size="LARGE" asChild>
+          <Link to="/developer">
+            <span className="relative z-20">FIND OUT MORE</span>
+          </Link>
+        </Button>
 
         {/* <LinkButton title="Click Me" path="/home" buttonProps={{ type: ButtonType.PRIMARY, size: ButtonSize.LARGE }} /> */}
       </div>
