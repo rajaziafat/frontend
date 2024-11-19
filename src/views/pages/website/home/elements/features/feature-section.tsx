@@ -3,7 +3,7 @@ import sec2icon2 from "src/assets/icon/sec2img3.png";
 import sec2icon1 from "src/assets/sec2img.png";
 import sec2icon3 from "src/assets/sec2img2.png";
 import startimg from "src/assets/star.png";
-import { Button } from "src/components/Button";
+import { Button } from "src/components/elements/Button";
 import { UserButton } from "src/components/Buttons/Buttons";
 const FeaturesSection = () => {
   return (

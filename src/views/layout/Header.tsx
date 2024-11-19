@@ -1,20 +1,16 @@
-import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./Header.css";
-import logo from "../../assets/logo.svg";
+import { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { SocialMedia } from "../../components/socialMedia/SocialMedia";
 import { Link, useLocation } from "react-router-dom";
-import { ButtonType, ExternalLinkButton } from "../../components";
-import { Audience } from "../Audience";
-import { SecondaryButton } from "src/components/Buttons/Buttons";
+import { Button } from "src/components/elements/Button";
 import { DowIcon } from "src/Utils/Icons";
 import UserImg from "../../assets/User.svg";
-import { Button } from "src/components/Button";
+import { SocialMedia } from "../../components/socialMedia/SocialMedia";
+import "./Header.css";
 interface HeaderProps {}
 
 export function Header({}: HeaderProps) {

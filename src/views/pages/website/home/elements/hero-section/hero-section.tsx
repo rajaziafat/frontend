@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import img from "src/assets/Frame.svg";
 import GridLayerimg from "src/assets/grid-layer.png";
-import { Button } from "src/components/Button";
+import { Button } from "src/components/elements/Button";
 
 const HeroSection = () => {
   return (

@@ -7,6 +7,8 @@ import AOS from "aos"; // Import AOS
 import "aos/dist/aos.css"; // Import AOS CSS
 import backdropSVG2 from "../../assets/footer-bd-rr.png";
 import backdropSVG3 from "../../assets/footer-bd-ll.png";
+import { Button } from "src/components/elements/Button";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   // Defining the Footer functional component
@@ -45,18 +47,19 @@ export const Footer = () => {
               >
                 <div className="d-flex flex-column align-items-md-end justify-content-md-end">
                   <h1 className="footer-h1-text font-mich mb-2">Stay Tuned!</h1>
-                  <div className=" flex justify-between mt-2 bg-white rounded-xl h-[56px]">
+                  <div className="mt-2 flex h-[56px] justify-between rounded-xl bg-white">
                     <input
                       type="email"
-                      className="bg-transparent outline-none border-none text-black pl-3 w-[calc(100%-122px)] text-sm"
+                      className="w-[calc(100%-122px)] border-none bg-transparent pl-3 text-sm text-black outline-none"
                       placeholder="Enter your email"
                     />
+
                     <button
-                      className={`gradient-btn-bg font-mich h-[57px] rounded-r-md min-w-[112px] hover:bg-transparent duration-300 relative after:absolute after:w-[106px] after:top-1/2 after:left-1/2 after:bg-secondary after:h-[53px] after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-r-md after:opacity-0 after:hover:opacity-100 after:duration-300  `}
+                      className={`gradient-btn-bg font-mich relative h-[57px] min-w-[112px] rounded-r-md duration-300 after:absolute after:left-1/2 after:top-1/2 after:h-[53px] after:w-[106px] after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-r-md after:bg-secondary after:opacity-0 after:duration-300 hover:bg-transparent after:hover:opacity-100`}
                     >
                       <span className="relative z-30">Join now</span>
                     </button>
-                    {/* <button className="footerbtn !rounded-l-none !text-sm flex justify-center items-center sm:text-base w-28 ">Join now</button> */}
+                    {/* <button className="footerbtn flex w-28 items-center justify-center !rounded-l-none !text-sm sm:text-base">Join now</button> */}
                   </div>
                 </div>
               </div>

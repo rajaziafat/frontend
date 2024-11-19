@@ -16,7 +16,6 @@ const buttonVariants = cva("flex items-center w-fit upppercase font-mich relativ
         "bg-gradient-to-r from-[#FF7E4B]  via-[#FF518C] to-[#66319B] h-[61px] min-w-[210px] hover:bg-transparent after:absolute after:w-[98%] after:top-1/2 after:left-1/2 after:bg-secondary after:h-[93%] after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-md after:opacity-0 after:hover:opacity-100 after:duration-300 rounded-md",
       SECONDARY:
         "bg-gradient-to-r from-[#FF7E4B]  via-[#FF518C] text-white to-[#66319B]  hover:bg-transparent after:absolute after:w-[98%] after:top-1/2 after:left-1/2 after:bg-secondary after:h-[93%] after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-md after:hover:opacity-0 after:opacity-100 after:duration-300 rounded-md",
-
       SECONDARY_DEVELOPER: "hover:!bg-primary-developer  rounded-md  duration-300 border-[2px] !border-primary-developer bg-transparent",
       PRIMARY_DEVELOPER: "!bg-primary-developer  rounded-md  duration-300 border-[2px] !border-primary-developer hover:!bg-transparent",
       SECONDARY_USER:
