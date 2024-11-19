@@ -73,14 +73,19 @@ export function EnterGitHubIssue({}: EnterGitHubIssueProps) {
             />
             {!isValidUrl && <p className="mt-2 text-base text-red-500">Enter a URL from a GitHub issues page.</p>}{" "}
           </div>
-          <button
+          {/* <button
             type="submit"
             className="border-1 mx-auto flex items-center justify-center rounded-md border-[#FF7E4B] px-[45px] py-[20px] transition-all duration-500 ease-in-out hover:border-0 hover:bg-[#FF7E4B]"
             onClick={goToIssuePage}
             onKeyDown={handleKeyDown}
           >
             Add
-          </button>
+          </button> */}
+          <Button variant="SECONDARY_DEVELOPER" size="MEDIUM" asChild className="w-20" parentClassName="w-max max-w-[214px]">
+            <Link to="/developer">
+              <span className="relative z-20">Add</span>
+            </Link>
+          </Button>
           {/* <Button variant={"SECONDARY_DEVELOPER"} size="MEDIUM" asChild>
             <Link to="#">
               <span className="relative z-20">Add</span>
