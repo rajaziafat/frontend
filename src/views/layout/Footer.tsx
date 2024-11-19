@@ -59,6 +59,11 @@ export const Footer = () => {
                     >
                       <span className="relative z-30">Join now</span>
                     </button>
+                    {/* <Button variant="PRIMARY" size="LARGE" asChild>
+                      <Link to="/developer">
+                        <span className="relative z-20">FIND OUT MORE</span>
+                      </Link>
+                    </Button> */}
                     {/* <button className="footerbtn flex w-28 items-center justify-center !rounded-l-none !text-sm sm:text-base">Join now</button> */}
                   </div>
                 </div>
