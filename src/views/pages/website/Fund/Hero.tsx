@@ -11,7 +11,8 @@ const Hero = () => {
         </h1>
         <div className="max-w-[1300px] flex gap-12 max-[1024px]:!px-5 px-3 flex-wrap justify-center  mx-auto mt-40 pb-20">
           <Cards
-            img={"https://avatars.githubusercontent.com/u/141809657?v=4"}
+            img={"https://avatars.githubusercontent.com/u/36803246?v=4"}
+            // img={"https://avatars.githubusercontent.com/u/11135032?v=4"}
             description=" Build highly concurrent, distributed, and resilient message-driven applications using Java/Scala"
           />
           <Cards
@@ -36,8 +37,8 @@ const Cards = ({ img, description }: { img: string; description: string }) => {
         {/* <div className=" bg-[url('/src/assets/glass.svg')] pt-2 size-[85px] bg-[length:100%_100%] grid place-items-center">
           <img src={img} className="size-[60px] rounded-full object-contain " alt="" />
         </div> */}
-        <div className=" border rounded-full border-gray-300 pt-1 size-[85px] bg-[length:100%_100%] grid place-items-center">
-          <img src={img} className="size-[64px] rounded-full object-contain " alt="" />
+        <div className=" border rounded-full border-gray-300 p-0 size-[85px] bg-[length:100%_100%] grid place-items-center">
+          <img src={img} className="w-full rounded-full object-contain " alt="" />
         </div>
         {/* <div className=""> */}
         <div className="max-[860px]:min-h-[150px]">
